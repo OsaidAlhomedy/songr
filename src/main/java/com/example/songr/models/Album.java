@@ -1,10 +1,8 @@
 package com.example.songr.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -21,6 +19,9 @@ public class Album {
     private String title;
     private String artist;
     private String imageUrl;
+
+    @OneToMany
+    private List<Song> songList;
 
 
     public Album() {
@@ -84,4 +85,11 @@ public class Album {
         this.id = id;
     }
 
+    public List<Song> getSongList() {
+        return songList;
+    }
+
+    public void setSongList(List<Song> songList) {
+        this.songList = songList;
+    }
 }

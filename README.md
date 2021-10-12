@@ -14,6 +14,8 @@
 
   - http://localhost:8080/albums
 
+  - http://localhost:8080/addalbum : here you can add an album or a song
+
   - http://localhost:8080/myInfo
 
 - Enjoy!

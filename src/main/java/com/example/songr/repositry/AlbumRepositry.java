@@ -6,4 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface AlbumRepositry extends JpaRepository<Album,Long> {
+    Album findByTitle(String title);
 }

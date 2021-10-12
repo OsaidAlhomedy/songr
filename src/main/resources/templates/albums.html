@@ -24,7 +24,7 @@
     </div>
 
     <div class="row" >
-        <div class="col text-center" th:each="album : ${albumss}">
+        <div class="col text-center d-flex justify-content-center" th:each="album : ${albumss}">
             <div class="card" style="width: 18rem;">
                 <img th:src="${album.imageUrl}" class="card-img-top" alt="album image">
 
